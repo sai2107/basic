@@ -1,0 +1,71 @@
+.carousel1 {
+    position: relative;
+    width: 80%;
+    height: 500px; /* Adjust the height as needed */
+    margin: 0 auto;
+    overflow: hidden;
+    perspective: 1000px;
+    background-color: white; /* Add a background color to ensure visibility */
+  }
+  
+  .carousel-inner1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s ease-in-out;
+    transform-style: preserve-3d;
+    
+  }
+  
+  .carousel-item1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .carousel-item-box1 {
+    width: 15vw; /* Width of the box */
+    height: 40%; /* Adjust height as needed */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background:rgb(250, 250, 250); /* Background color of the info container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .carousel-item1 h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: black;
+  }
+  
+  .carousel-item1 p {
+    font-size: 10px;
+    color: black;
+  }
+  
+  .carousel-inner1 .carousel-item1:nth-child(1) { transform: rotateY(0deg) translateZ(500px); }
+  .carousel-inner1 .carousel-item1:nth-child(2) { transform: rotateY(72deg) translateZ(500px); }
+  .carousel-inner1 .carousel-item1:nth-child(3) { transform: rotateY(144deg) translateZ(500px); }
+  .carousel-inner1 .carousel-item1:nth-child(4) { transform: rotateY(216deg) translateZ(500px); }
+  .carousel-inner1 .carousel-item1:nth-child(5) { transform: rotateY(288deg) translateZ(500px); }
+  
+  .carousel-inner1 .carousel-item1:nth-child(1) { opacity: 1; }
+  .carousel-inner1 .carousel-item1:nth-child(2) { opacity: 1; }
+  .carousel-inner1 .carousel-item1:nth-child(3) { opacity: 1; }
+  .carousel-inner1 .carousel-item1:nth-child(4) { opacity: 1; }
+  .carousel-inner1 .carousel-item1:nth-child(5) { opacity: 1; }
+  

@@ -1,0 +1,175 @@
+.product1-container {
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+    margin: 0px;
+}
+
+.vehicle-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 600px;
+    background-color: white;
+    margin: 0px;
+}
+
+.color-div {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    margin-top: 20px;
+}
+
+.vehicle-images {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.vehicle-images img {
+    width: 400px;
+    height: 300px;
+}
+
+.color-div button {
+    width: 90px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+}
+
+.button1:hover {
+    background-color: rgb(248, 40, 40);
+    transition: linear 1s;
+    color: white;
+    cursor: pointer;
+}
+
+.button2:hover {
+    background-color: skyblue;
+    transition: linear 1s;
+    color: white;
+    cursor: pointer;
+}
+
+.button3:hover {
+    background-color: black;
+    transition: linear 1s;
+    color: white;
+    cursor: pointer;
+}
+
+.vehicle-details{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    
+}
+
+table {
+	width: 800px;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    background-color: grey;
+}
+
+th,
+td {
+	padding: 15px;
+	background-color: rgba(255,255,255,0.2);
+	color: #fff;
+    
+
+}
+
+th {
+	text-align: center;
+}
+
+thead {
+	th {
+		background-color: black;
+	}
+}
+
+
+tbody {
+	tr {
+		&:hover {
+			background-color: rgba(255,255,255,0.3);
+		}
+	}
+	td {
+		position: relative;
+		&:hover {
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: -9999px;
+				bottom: -9999px;
+				background-color: rgba(255,255,255,0.2);
+				z-index: -1;
+                text-align: center;
+			}
+		}
+	}
+}
+
+.vehicle-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 600px;
+    height: 550px;
+    padding: 20px;
+    background: linear-gradient(to bottom right, #fff, #e0e0e0);
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    
+}
+
+.vehicle-info:hover {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.vehicle-info h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #424242;
+}
+
+.vehicle-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #424242;
+    text-align: center;
+}
+
+.vehicle-info button{
+    width: 120px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    height: 30px;
+    border-width: 0;
+    cursor: pointer;
+
+}
+
+a{
+    border-width: 0;
+    color: inherit;
+}
+
